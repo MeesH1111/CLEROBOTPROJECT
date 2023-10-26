@@ -92,6 +92,14 @@ footer {
     font-size: 1.1em;
 }
 
+.prijs {
+    display: flex;
+    align-items: flex-end;
+    font-size: 2em;
+    font-family: Arial;
+    height: 10px;
+}
+
 .button {
     display: flex;
     justify-content: center;
