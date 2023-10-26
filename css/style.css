@@ -1,28 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    /* box-sizing: border-box; */
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Play', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #1e1b1e;
 }
 
 h1 {
-    font-family: Arial;
+    font-family: Metal Mania;
+    font-size: 2.8rem;
+    margin-top: 0;
 }
 
 h2 {
-    font-family: Arial;
+    font-size: 1.7rem;
 }
 
 p {
-    font-family: Arial;
+    font-size: 1.2rem;
+    letter-spacing: 0;
 }
-
-
 
 nav {
     border-bottom: 0.2vw solid #252325;
-    padding: 0.8vw 0vw;
+    padding: 0.6vw 0 0.8vw;
+    align-items: center;
+    margin: 0;
 }
 
 header {
@@ -37,36 +47,44 @@ footer {
 
 .logolinks {
     display: flex;
+    flex: 1;
     flex-direction: row;
     justify-content: space-between;
-    height: 50px;
+    height: min-content;
 }
 
 .navlinks {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 100px;
+    padding-right: 6vw;
+    gap: 1.5vw;
+    font-weight: 999;
 }
 
 .navlogo {
     display: flex;
-    padding-left: 100px;
-    padding-top: 5px;
-    width: min-content;
-    height: 100%;
+    margin: 0 0 0vw 6vw;
+    padding: 0.2vw;
+    width: fit-content;
+    height: 100px;
+    background-color: #2b282b;
+    border-radius: 0.5vw;
+    box-shadow:
+        0 0.15vw 0.05vw 0.1vw rgb(159, 14, 203),
+        0.2vw 0.05vw 0.05vw 0 rgb(159, 14, 203),
+        -0.2vw 0.05vw 0.1vw 0 rgb(159, 14, 203);
 }
 
 .navlink {
-    margin-left: 10px;
     padding: 1vw;
     box-shadow: inset 0 0 0 0 black;
     color: white;
     transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out, border 0.3s ease-in-out;
-
     text-decoration: none;
     border: 0.2vw solid transparent;
     border-radius: 0.5vw;
+    font-size: 1.4rem;
 }
 
 .navlink:hover {
@@ -78,9 +96,11 @@ footer {
 .product {
     display: flex;
     flex-direction: row;
-    padding: 3vw 8vw;
+    justify-content: space-between;
+    padding: 3vw 0 3vw 6vw;
     overflow-y: hidden;
-    background: linear-gradient(180deg, #1e1b1e 30%, #2f2d2f 100%);
+    background: linear-gradient(180deg, #1e1b1e 25%, #2f2d2f 85%);
+    gap: 4vw;
 }
 
 .productimgdiv {
@@ -111,17 +131,18 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-left: 100px;
-    padding-top: 100px;
+    padding-right: 6vw;
     width: 50%;
-    font-size: 1.1em;
+    font-size: 1.1rem;
+    align-self: center;
 }
 
 .prijs {
     display: flex;
     align-items: flex-end;
-    font-size: 2em;
+    font-size: 2rem;
     height: 10px;
+    font-family: 'Roboto Condensed';
 }
 
 .button {
@@ -130,7 +151,7 @@ footer {
     background-color: rgb(159, 14, 203);
     text-shadow: 0 8px 16px 0 rgba(48, 13, 86, 0.6);
     color: white;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     padding: 10px;
     padding-bottom: 12px;
     border: 0;
@@ -162,7 +183,7 @@ footer {
 }
 
 .copyright1 {
-    height: 1px;
+    margin: 0.5vw 0;
 }
 
 .socials {
@@ -173,7 +194,7 @@ footer {
 .social {
     padding-right: 20px;
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 1.8rem;
     color: white;
 }
 
