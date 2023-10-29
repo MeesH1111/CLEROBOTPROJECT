@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="logolinks">
+            <a class="homelogo" href="./index.html"><img class="navlogo" src="images/LOGOSTUDYSWEETS.png" alt="logo"
+                    width="35px" height="35px"></a>
+            <div class="navlinks">
+                <a class="navlink" href="./index.html#">Product</a>
+                <a class="navlink" href="./contact.html">Contact</a>
+                <a class="navlink" href="#footer-right">Privacy-Beleid</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>Neem contact met ons op</h1>
+        <h2>Versturen werkt op het moment niet, omdat deze website alleen voor showcase is!</h2>
+    </header>
+
+    <main>
+        <div id=slingers>
+            <img src="./images/slingers-halloween.png" class="slingers">
+            <img src="./images/slingers-halloween.png" class="slingers">
+            <img src="./images/slingers-halloween.png" class="slingers">
+        </div>
+        <form>
+            <div class="grid-item">
+                <label for="first-name">Voornaam *</label>
+                <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+            </div>
+            <div class="grid-item">
+                <label for="last-name">Achternaam *</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+            </div>
+            <div class="grid-item wide-item">
+                <label for="email">Email *</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="grid-item">
+                <label for="city">Stad *</label>
+                <input type="text" name="city" id="city" placeholder="City" required>
+            </div>
+            <div class="grid-item">
+                <label for="birth-date">Geboortedatum *</label>
+                <input type="date" name="birth-date" id="birth-date" required>
+            </div>
+            <div class="grid-item wide-item">
+                <label for="subject">Kies onderwerp *</label>
+                <select id="subject" required>
+                    <option value="" disabled selected>Kies onderwerp</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="question">Vragen</option>
+                    <option value="other">Anders</option>
+                </select>
+            </div>
+            <div class="grid-item wide-item">
+                <label for="comment">Commentaar</label>
+                <textarea id="comment"></textarea>
+            </div>
+            <div class="grid-item wide-item">
+                <button type="submit">Versturen</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <h2 class="copyright1">StudySweets</h2>
+            <p class="copyright1">© 2023 - 2024</p>
+            <div class="socials">
+                <a class="social" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a class="social" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a class="social" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div id="footer-right">
+            <a href="#footer-right">Privacy Policy</a>
+            <a href="#footer-right">Terms and Conditions</a>
+            <a href="#footer-right">Cookie Policy</a>
+            <a href="https://youtu.be/WIRK_pGdIdA" target="_blank" id="easter-egg">Chip Policy</a>
+        </div>
+    </footer>
+</body>
+
+</html>

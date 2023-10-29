@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BOO-tiful sweet dispenser</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -14,21 +14,27 @@
 <body>
     <nav>
         <div class="logolinks">
-            <img class="navlogo" src="images/LOGOSTUDYSWEETS.png" alt="logo" width="35px" height="35px">
+            <a class="homelogo" href="./index.html"><img class="navlogo" src="images/LOGOSTUDYSWEETS.png" alt="logo"
+                    width="35px" height="35px"></a>
             <div class="navlinks">
                 <a class="navlink" href="#product">Product</a>
-                <a class="navlink" href="">Contact</a>
-                <a class="navlink" href="#privacybeleid">Privacy-Beleid</a>
+                <a class="navlink" href="./contact.html">Contact</a>
+                <a class="navlink" href="#footer-right">Privacy-Beleid</a>
             </div>
         </div>
     </nav>
-    <header id="product">
+    <header>
+        <div id=slingers>
+            <img src="./images/slingers-halloween.png" class="slingers">
+            <img src="./images/slingers-halloween.png" class="slingers">
+            <img src="./images/slingers-halloween.png" class="slingers">
+        </div>
         <div class="product">
             <div class="productimgdiv">
                 <img class="productimg" src="images/CLEROBOT.png" alt="product" width="450px" height="500px">
             </div>
             <div class="productinfo">
-                <h1>StudySweets: BOO-tiful Sweet Dispenser</h1>
+                <h1>Study<span class="paarsetext">Sweets:</span> BOO-tiful Sweet Dispenser</h1>
                 <p>Welkom bij het 'StudySweets Spookhuis' - de ultieme snoepmachine voor betere concentratie tijdens het
                     studeren. Geniet
                     van griezelige beloningen na elke 50 minuten leren. Laat de spookachtige sfeer je concentratie niet
@@ -36,23 +42,26 @@
                     van de zoete smaak van succes met de BOO-tiful sweet dispenser!</p>
                 <p class="prijs">€69,99</p>
                 <div class="buttondiv">
-                    <a href="kopen.html" class="button" target="_blank">Kopen</a>
+                    <a href="https://tikkie.me/pay/h8o3qo1qdei1tjv52e1o" class="button" target="_blank">Kopen</a>
                 </div>
             </div>
         </div>
     </header>
-    <footer id="privacybeleid">
-        <div>
-            <div class="copyright">
-                <h2 class="copyright1">StudySweets</h2>
-                <p class="copyright1">© 2023 - 2024</p>
-                <p class="copyright1">Privacy - Terms</p>
-                <div class="socials">
-                    <a class="social" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-                    <a class="social" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                    <a class="social" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                </div>
+    <footer>
+        <div class="footer-left">
+            <h2 class="copyright1">StudySweets</h2>
+            <p class="copyright1">© 2023 - 2024</p>
+            <div class="socials">
+                <a class="social" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a class="social" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a class="social" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
             </div>
+        </div>
+        <div id="footer-right">
+            <a href="#footer-right">Privacy Policy</a>
+            <a href="#footer-right">Terms and Conditions</a>
+            <a href="#footer-right">Cookie Policy</a>
+            <a href="https://youtu.be/WIRK_pGdIdA" target="_blank" id="easter-egg">Chip Policy</a>
         </div>
     </footer>
 </body>

@@ -15,13 +15,15 @@ body {
 }
 
 h1 {
-    font-family: Metal Mania;
+    font-family: 'play';
+    font-weight: 999;
     font-size: 2.8rem;
-    margin-top: 0;
+    margin: 0;
 }
 
 h2 {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+    color: rgb(158, 158, 158);
 }
 
 p {
@@ -39,13 +41,14 @@ a {
     flex-direction: row;
     transform: translateY(-10%);
     justify-content: center;
-    margin-bottom: -2.5vw;
+    margin-bottom: -2vw;
 }
 
 .slingers {
     width: 33%;
     height: auto;
 }
+
 
 /* Nav begin */
 nav {
@@ -103,98 +106,114 @@ nav {
     border-bottom: 0.2vw solid rgb(159, 14, 203);
 }
 
-
-
-/* Header begin */
 header {
+    display: flex;
+    flex-direction: column;
+    background-color: #2f2d2f;
     color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 2vw;
     border-bottom: 0.2vw solid #252325;
 }
 
-.product {
+
+/* Main Begin */
+main {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 3vw 0 3vw 7.5vw;
-    overflow-y: hidden;
-    background: linear-gradient(180deg, #1e1b1e 25%, #2f2d2f 85%);
-    gap: 4vw;
-}
-
-.productimgdiv {
-    background-color: #2b282b;
-    width: 500px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0.4vw 0.8vw 0.2vw #1e1b1e;
-}
-
-.productimgdiv img {
-    padding-top: 1vw;
-}
-
-.productimg:hover {
-    transform: scale(105%);
-    transition: all 1s ease;
-}
-
-.productimg:not(:hover) {
-    transform: scale(100%);
-    transition: all 1s ease;
-}
-
-.productinfo {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    padding-right: 7.5vw;
-    width: 50%;
-    font-size: 1.1rem;
-    align-self: center;
+    align-items: center;
+    border-bottom: 0.2vw solid #252325;
+    padding-bottom: 6vw;
+    background: linear-gradient(180deg, #1e1b1e 25%, #2f2d2f 85%);
 }
 
-.paarsetext {
-    color: rgb(159, 14, 203);
-}
-
-.prijs {
-    display: flex;
-    align-items: flex-end;
-    font-size: 2rem;
-    height: 10px;
-    font-family: 'Roboto Condensed';
-}
-
-.button {
-    display: flex;
+form {
+    display: grid;
+    column-gap: 5%;
+    grid-template-columns: 45% 45%;
     justify-content: center;
-    background-color: rgb(159, 14, 203);
-    text-shadow: 0 8px 16px 0 rgba(48, 13, 86, 0.6);
+    min-width: fit-content;
+    padding: 1vw 2vw;
+    background-color: #2f2d2f;
     color: white;
-    font-size: 1.1rem;
-    padding: 0.7vw;
-    border: 0.2vw solid rgb(159, 14, 203);
-    border-radius: 6px;
-    box-shadow: inset 0 0 0 0 black;
-    transition: all ease 0.6s;
+    border: 0.4vw solid #252325;
+    border-radius: 0.8vw;
+    transform: translateY(7%);
+    box-shadow: 0 0 0.7vw rgb(0, 0, 0),
+        0 0 1.5vw rgb(23, 22, 40);
 }
 
-.buttondiv {
-    padding-top: 10px;
+.wide-item {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
-.button:hover {
-    scale: 1.05;
-    transition: all ease 0.4s;
+#form-section h2 {
+    text-align: center;
+    font-size: 3rem;
 }
 
-.button:active {
-    transform: scale(0.85);
+.grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    display: flex;
+    padding: 0.4vw 8vw;
+    margin: 1.1vw 0 0;
+    font-size: 1.4rem;
+    font-family: play;
+    max-width: 50%;
+    align-self: center;
+    justify-content: center;
+    border-radius: 0.4vw;
+    color: white;
+    background-color: rgb(159, 14, 203);
+    border: 0.2vw solid 0.2vw solid rgb(159, 14, 203);
+    transition: 0.15s ease-in-out
+}
+
+form button:hover {
+    transition: 0.1s ease-in-out;
     background-color: white;
     color: black;
-    transition: all ease 0.2s;
+    box-shadow: 0 0 0.75vw rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+input,
+textarea,
+select {
+    padding: 0.5vw;
+    border-radius: 0.4vw;
+    border: 0.3vw solid rgb(159, 14, 203);
+    margin: 0.3vw 0 1.1vw;
+    font-family: play;
+    font-size: 1.1rem;
+    outline: none;
+    transition: 0.15s ease-in-out;
+}
+
+textarea {
+    transition: none;
+    min-width: 100%;
+    max-width: 0;
+    min-height: 5vw;
+    max-height: 15vw;
+    border: 0.3vw solid #252325;
+}
+
+input:valid,
+select:valid {
+    transition: 0.15s ease-in-out;
+    border: 0.3vw solid rgb(163, 170, 219);
+}
+
+input:focus:invalid {
+    transition: 0.15s ease-in-out;
+    border: 0.3vw solid rgb(151, 29, 29);
 }
 
 
@@ -207,6 +226,10 @@ footer {
     flex: 1;
     justify-content: space-between;
     padding-bottom: 2vw;
+}
+
+footer h2 {
+    color: white;
 }
 
 .footer-left {
