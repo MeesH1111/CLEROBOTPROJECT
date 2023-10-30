@@ -290,3 +290,15 @@ footer h2 {
     color: white;
     border-bottom: 3px solid rgb(159, 14, 203);
 }
+
+
+@media only screen and (max-width: 800px) {
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-right {
+        flex-direction: column;
+    }
+}
